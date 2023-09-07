@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrando Maior Valor</title>
+    <style>
+        body{
+          background-color: beige;
+        }
+        h2{
+              text-align: center;
+          }
+  
+          #estrutura{
+              display: flex;
+              justify-content: center;
+          }
+  
+      </style>
+
+</head>
+<body>
+    <h2> Descubra o maior valor</h2>
+    <div id="estrutura">
+        
+        <script>
+            let valor1 = parseFloat(prompt("Digite o primeiro valor: "))
+            let valor2 = parseFloat(prompt("Digite o segundo valor: "))
+            let valor3 = parseFloat(prompt("Digite o terceiro valor: "))
+
+            if(valor1>valor2 && valor1>valor3){
+                document.write("O primeiro valor é o maior!")
+            }else if(valor2>valor1 && valor2>valor3){
+                document.write("O segundo valor é o maior!")
+            }else if(valor3>valor1 && valor3>valor2){
+                document.write("O terceiro valor é o maior!")
+            }else {
+                document.write("Os valores são iguais!")
+            }
+
+
+
+        </script>
+
+    </div>
+</body>
+</html>

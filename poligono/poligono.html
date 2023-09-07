@@ -21,8 +21,8 @@
 
     <div id="estrutura">
         <script>
-            let lados = (prompt("Digite a quantidade de lados do polígono: "))
-            let medida = (prompt("Digite a medida do lado (em cm): "))
+            let lados = parseFloat(prompt("Digite a quantidade de lados do polígono: "))
+            let medida = parseFloat(prompt("Digite a medida do lado (em cm): "))
 
             let resultado
 
@@ -36,8 +36,10 @@
                 document.write("O valor da sua área é: ")
             }else if(lados==5){
                 document.write("Pentágono")
+            }else if(lados<3){
+                document.write("NÃO É UM POLÍGONO")
             }else{
-            document.write("Você digitou a operação desejada incorretamente.")
+            document.write("POLÍGONO NÃO IDENTIFICADO.")
         }
                 
         </script>

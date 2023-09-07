@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando Votação </title>
+    <style>
+        body{
+          background-color: beige;
+        }
+        h2{
+              text-align: center;
+          }
+  
+          #estrutura{
+              display: flex;
+              justify-content: center;
+          }
+  </style>
+</head>
+<body>
+    <h2> Verificando se pode votar</h2>
+
+    <div id="estrutura">
+        <script>
+            let ano = parseInt(prompt("Digite o seu ano de nascimento: "))
+
+            if(ano<2008){
+                document.write("Você pode votar ")
+            }else{ 
+                document.write("Você não pode votar ")
+            }
+      
+
+
+        </script>
+
+    </div>
+
+
+</body>
+</html>

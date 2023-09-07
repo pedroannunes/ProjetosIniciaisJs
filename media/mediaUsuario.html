@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Usuário</title>
+    <style>
+        body{
+          background-color: beige;
+        }
+        h2{
+              text-align: center;
+          }
+  
+          #estrutura{
+              display: flex;
+              justify-content: center;
+          }
+  </style>
+</head>
+<body>
+    <h2> Calculando a média</h2>
+
+    <div id="estrutura">
+        <script>
+            let numero1 = parseInt(prompt("Digite o um número: "))
+            let numero2 = parseInt(prompt("Digite o um número: "))
+            let numero3 = parseInt(prompt("Digite o um número: "))
+            let numero4 = parseInt(prompt("Digite o um número: "))
+
+           
+            if(numero1>0 && numero1<10 && numero2>0 && numero2<10 && numero3>0 && numero3<10 && numero4>0 && numero4<10){
+
+            let media = (numero1+numero2+numero3+numero4)/4
+
+            if(media>5){
+                document.write("passou no teste <br>" + media)
+            }else{
+                document.write("tente novamente <br>" + media)
+            }
+        }
+
+
+        </script>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculando maior valor</title>
+    <style>
+        body{
+          background-color: beige;
+        }
+        h2{
+              text-align: center;
+          }
+  
+          #estrutura{
+              display: flex;
+              justify-content: center;
+          }
+  
+      </style>
+</head>
+<body>
+    <h2> Calculando maior valor </h2>
+    
+    <div id="estrutura">
+        <script>
+            let valor1 = parseFloat(prompt("Digite o primeiro: "))
+            let valor2 = parseFloat(prompt("Digite o segundo: "))
+
+            if(valor1>valor2){
+                document.write("O primeiro valor é o maior!")
+            }else if(valor1==valor2){
+                document.write("Os valores são iguais!")
+            }else{
+                document.write("O segundo valor é o maior!")
+            }
+        </script>
+    </div>
+    
+</body>
+</html>
