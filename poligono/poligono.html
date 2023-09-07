@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poligonos</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+
+        #estrutura{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h2> Verificando lado dos Poligonos</h2>
+
+    <div id="estrutura">
+        <script>
+            let lados = (prompt("Digite a quantidade de lados do polígono: "))
+            let medida = (prompt("Digite a medida do lado (em cm): "))
+
+            let resultado
+
+            if(lados==3){
+                document.write("Triangulo <br>");
+                resultado = medida+medida+medida
+                document.write("O seu perímetro é: " + resultado);
+            }else if(lados==4){
+                document.write("Quadrado <br>")
+                resultado = medida * medida
+                document.write("O valor da sua área é: ")
+            }else if(lados==5){
+                document.write("Pentágono")
+            }else{
+            document.write("Você digitou a operação desejada incorretamente.")
+        }
+                
+        </script>
+
+
+    </div>
+
+
+</body>
+</html>

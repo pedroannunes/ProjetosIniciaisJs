@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas de Maçãs</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+
+        #javascript{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+        
+</head>
+<body>
+    <h2> Calculo de Vendas de Maçãs </h2>
+
+    <div id="javascript">
+    <script>
+        let quantidadeMacas = parseFloat (prompt("Digite a quantidade de Maçãs que deseja: ")); 
+
+        let precoDuzia = 3.50
+        let precoMaisduzia = 2.50
+
+        if(quantidadeMacas <=11){
+            document.write("Comprando abaixo de 1 duzia, a unidade sai por R$3.50." + "<br>" + " Portanto valor a ser pago é de R$:" + precoDuzia * quantidadeMacas);
+        }else{
+            document.write("Comprando 1 duzia ou acima, a unidade sai por R$2.50. Portanto valor a ser pago é de R$:" + precoMaisduzia * quantidadeMacas);
+        }
+
+    </script>
+    
+    </div>
+
+    
+</body>
+</html>

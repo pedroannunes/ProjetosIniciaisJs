@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+
+        #estrutura{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2> Calcule </h2>
+   
+    <div id="estrutura">
+   <script>
+        let valor1 = parseInt(prompt("Digite o primeiro número: "))
+      
+        let valor2 = parseInt(prompt("Digite o segundo número: "))
+
+        let operacao = (prompt("Escolha a operação. Digite 1 - Adição, 2 - Subtração, 3 - Divisão, 4 - Multiplicação: "))
+
+        let resultado 
+
+        if(operacao==1){
+            resultado = valor1+valor2 
+            document.write("O resultado da sua operação é: " + resultado)
+        }else if(operacao==2){
+            resultado = valor1-valor2 
+            document.write("O resultado da sua operação é: " + resultado)
+        }else if(operacao==3){
+            resultado = valor1/valor2 
+            document.write("O resultado da sua operação é: " + resultado)
+        }else if(operacao==4){
+            resultado = valor1*valor2 
+            document.write("O resultado da sua operação é: " + resultado)
+        }else{
+            document.write("Você digitou a operação desejada incorretamente.")
+        }
+
+    </script>
+    </div>
+
+</body>
+</html>

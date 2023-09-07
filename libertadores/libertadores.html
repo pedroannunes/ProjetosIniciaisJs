@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Libertadores</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+
+        #liberta{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h2> Resultado da Final da libertadores </h2>
+
+    <div id="liberta">
+        <script>
+            let golsCorin = parseInt(prompt("Digite a quantidade de gol/gols que o Corinthians marcou: "))
+            let golsPalme = parseInt(prompt("Digite a quantidade de gol/gols que o Palmeiras marcou: "))
+
+           document.write("Com um placar de: " + golsCorin + "x" + golsPalme + "<br>")
+
+            if(golsCorin>golsPalme){
+                document.write("O Corinthians foi campeão da libertadores!")
+            }else if(golsCorin == golsPalme){
+                document.write("O jogo terminou empatado!")
+            }else{
+                document.write("O Palmeiras foi campeão da libertadores!")
+                }
+
+                
+            
+        </script>
+
+    </div>
+    
+</body>
+</html>
